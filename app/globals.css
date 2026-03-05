@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-navy: #0A2540;
+    --color-blue: #2196F3;
+    --color-blue-light: #64B5F6;
+    --color-green: #8BC34A;
+    --color-bg: #FFFFFF;
+    --color-bg-alt: #F5F7FA;
+    --color-text: #4B5563;
+    --color-border: #E5E7EB;
+  }
+
+  .dark {
+    --color-bg: #0B1426;
+    --color-bg-alt: #0E1C33;
+    --color-text: #F1F5F9;
+    --color-text-secondary: #94A3B8;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-text dark:bg-dark-bg dark:text-dark-text;
+  }
+}
+
+@layer components {
+  .container-main {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+}
