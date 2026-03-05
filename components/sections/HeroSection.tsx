@@ -82,7 +82,7 @@ export default function HeroSection({
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background image */}
       <Image
-        src="/images/hero/hero-bg.webp"
+        src="/images/hero/newhero.jpg"
         alt="Nettoyage professionnel de bureaux et espaces commerciaux à Rouen"
         fill
         className="object-cover"
@@ -143,9 +143,8 @@ export default function HeroSection({
           variants={fadeInUp}
           className="font-display text-[40px] md:text-[56px] lg:text-[62px] font-extrabold text-white leading-[1.08] tracking-tight mb-6"
         >
-          Le nettoyage<br />
-          <span className="text-proclean-blue">professionnel</span><br />
-          à Rouen
+          Nettoyage de Pro pour les <span className="text-proclean-blue">Pros</span><br />
+          et les Particuliers
         </motion.h1>
 
         {/* Sous-titre */}
@@ -153,8 +152,8 @@ export default function HeroSection({
           variants={fadeInUp}
           className="text-lg text-white/55 leading-relaxed max-w-[520px] mx-auto mb-11"
         >
-          De la cathédrale Notre-Dame aux quartiers de la rive droite,
-          ProClean transforme vos espaces avec expertise et passion.
+          De la cathédrale Notre-Dame aux quartiers de la rive droite,{' '}
+          <span className="text-white font-bold">ProClean</span> transforme vos espaces avec expertise et passion.
         </motion.p>
 
         {/* Double CTA */}
@@ -181,18 +180,6 @@ export default function HeroSection({
           </a>
         </motion.div>
 
-        {/* Barre de confiance */}
-        <motion.div
-          variants={fadeIn}
-          className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 pt-6 border-t border-white/[0.08]"
-        >
-          {['Réponse en 24h', 'Sans engagement', 'Devis 100% gratuit'].map((text, i) => (
-            <div key={i} className="flex items-center gap-2 text-white/50 text-sm">
-              <Check size={16} className="text-proclean-green" />
-              {text}
-            </div>
-          ))}
-        </motion.div>
       </motion.div>
     </section>
   );
