@@ -379,6 +379,20 @@ Le fichier source des textes bruts est dans `content/raw/rouen-textes.txt`.
 
 ---
 
+## Git & GitHub
+
+- **Repository** : https://github.com/doflamingo27/proclean-rouen
+- **Remote** : `https://github.com/doflamingo27/proclean-rouen.git`
+- **Branche principale** : `main`
+
+### Workflow Git
+- Commiter régulièrement avec des messages descriptifs en français
+- Ne JAMAIS commiter `.env.local` (secrets SMTP)
+- Push sur `main` après chaque lot de modifications validées
+- Vérifier `git status` avant chaque commit
+
+---
+
 ## Déploiement
 
 Le site sera déployé sur un VPS Contabo avec :
